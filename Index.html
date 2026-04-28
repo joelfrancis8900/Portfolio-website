@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joel Francis – Software Engineer</title>
+    <style>
+        /* Base styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #222;
+            line-height: 1.5;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0070f3;
+        }
+
+        /* Header */
+        header {
+            padding: 15px 20px;
+            background-color: #fff;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        header nav a {
+            margin: 0 10px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        /* Intro Section */
+        .intro {
+            max-width: 600px;
+            margin: 40px auto 30px;
+            text-align: center;
+            padding: 0 15px;
+        }
+
+        .intro p {
+            font-size: 1rem;
+        }
+
+        /* Projects Section */
+        .projects {
+            display: grid;
+            grid-template-columns: 1fr;
+            /* Mobile first */
+            gap: 20px;
+            max-width: 600px;
+            margin: 0 auto 50px;
+            padding: 0 15px;
+        }
+
+        .project-card {
+            background-color: #fff;
+            border-radius: 12px;
+            padding: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .thumbnail-container {
+            position: relative;
+        }
+
+        .project-card img {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            /* consistent size */
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 12px;
+        }
+
+        .tech-label {
+            position: absolute;
+            bottom: 8px;
+            right: 8px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            font-size: 0.75rem;
+            padding: 2px 6px;
+            border-radius: 5px;
+        }
+
+        .project-card h3 {
+            margin-top: 0;
+            font-size: 1.2rem;
+        }
+
+        .project-card p {
+            flex-grow: 1;
+            font-size: 0.95rem;
+            margin-bottom: 8px;
+        }
+
+        .project-links a {
+            margin-right: 10px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        /* Contact Section */
+        .contact {
+            text-align: center;
+            padding: 30px 15px;
+            background-color: #fff;
+        }
+
+        .contact h2 {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            font-size: 0.85rem;
+            color: #555;
+        }
+
+        /* Tablet view */
+        @media (min-width: 768px) {
+            header {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .projects {
+                grid-template-columns: repeat(2, 1fr);
+                max-width: 900px;
+            }
+        }
+
+        /* Desktop view */
+        @media (min-width: 1200px) {
+            .projects {
+                grid-template-columns: repeat(3, 1fr);
+                max-width: 1200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Joel Francis</h1>
+        <nav>
+            <a href="https://github.com/joelfrancis8900" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/joel-francis-541821305/" target="_blank">LinkedIn</a>
+        </nav>
+    </header>
+
+    <!-- Intro Section -->
+    <section class="intro">
+        <p>
+            I’m a software engineer building clean, functional web apps with next.js, typescript, tailwind css,
+            postgresql, prisma, supabase, and modern JavaScript.
+            Below is a project with live demo and source code.
+        </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects">
+
+        <!-- Project 1 -->
+        <div class="project-card">
+            <div class="thumbnail-container">
+                <img src="VideoTube sample screenshot.png" alt="Video Tube Screenshot">
+
+            </div>
+            <h3>Video tube</h3>
+            <p>A video platform clone featuring authentication, video uploads, and dynamic routing. Demonstrates
+                frontend architecture.</p>
+            <div class="project-links">
+                <a href="https://joel-francis-video-tube.vercel.app/" target="_blank">Live Demo</a>
+                <a href="https://github.com/joelfrancis8900/Video-Tube" target="_blank">GitHub repository</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <!-- <h2>Contact</h2>
+        <p>Email: <a href="mailto:youremail@example.com"></a></p>
+        <p>Phone:</p> -->
+        <p>Location: New York, New York</p>
+    </section>
+
+    <footer>
+        &copy; 2026 Joel Francis
+    </footer>
+
+</body>
+
+</html>
